@@ -1,0 +1,290 @@
+﻿<html>	
+
+<head>
+
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Assessment 3 </title>
+	
+	<script>
+		
+		function cat() {
+			/*Display message in text field*/
+			var displayField = document.getElementById("animalText");
+            displayField.value = "User clicks Cat";
+
+			/*Display message in span tag*/
+			var catSpan = document.getElementById("animalClicked");
+       		catSpan.innerHTML = "<span style='color: orange; font-size: 15; font-family: Gill Sans, Gill Sans MT, Calibri, Trebuchet MS, sans-serif;'>Cat is clicked</span>";
+			
+			/*Display cat image*/
+			var catImage = document.getElementById("animalImage");			
+			catImage.src = "cat.jpg";
+			}
+	
+		function dog() {
+			/*Display message in text field*/
+			var displayField = document.getElementById("animalText");
+			displayField.value = "User clicks Dog";
+
+			/*Display message in span tag*/
+			var dogSpan = document.getElementById("animalClicked");
+			dogSpan.innerHTML = "<span style='color: orange; font-size: 15; font-family: Gill Sans, Gill Sans MT, Calibri, Trebuchet MS, sans-serif;'>Dog is clicked</span>";
+
+			/*Display dog image*/
+			var dogImage = document.getElementById("animalImage");			
+			dogImage.src = "dog.jpg";
+			}
+
+		function frog() {
+			/*Display message in text field*/
+			var displayField = document.getElementById("animalText");
+			displayField.value = "User clicks Frog";
+
+			/*Display message in span tag*/
+			var frogSpan = document.getElementById("animalClicked");
+			frogSpan.innerHTML = "<span style='color: orange; font-size: 15; font-family: Gill Sans, Gill Sans MT, Calibri, Trebuchet MS, sans-serif;'>Frog is clicked</span>";
+
+			/*Display frog image*/
+			var frogImage = document.getElementById("animalImage");			
+			frogImage.src = "frog.jpg";
+			}
+
+	</script>
+	
+	<style> 
+
+		/* CSS for header tags in task 1 */
+		h1 {
+			font-size: 50px;			
+		}
+		
+		h2 {
+			font-size: 40px;			
+		}
+
+		h3 {
+			font-size: 24px;
+		}
+
+		.heading {
+			font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+			background-color: maroon;
+			color: orange;	
+			margin: 0; 
+  			padding: 5px;	
+			  
+		}	
+
+		/* CSS for table in task 2 */
+		table {
+				width: 100%;
+				border-collapse: separate;
+				margin-bottom: 20px;
+			}
+	
+			th, td {
+				border: 1px solid #ddd;
+				padding: 8px;
+				text-align: left;
+				font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+			}
+	
+			th {
+				background-color: maroon;
+				color: orange;
+			}
+		
+			table.alternate tr:nth-child(odd) {
+				background-color : #e7e4e4 ;
+				color: maroon;
+			}
+			
+			table.alternate tr:nth-child(even) {
+				background-color : #a39d9d ;
+				color: orange;
+			}
+		
+		/* CSS for buttons in task 4 */
+			button:focus {
+			  background-color: orange; /* This highlights the recently clicked button*/
+
+	</style>
+
+</head>
+
+<body>
+
+	<!-- Task 1: Use CSS to display information -->
+    <h1 class="heading">8465496 Daniel Pignatelli</h1>
+	<h2 class="heading">COMP804: Web Security</h2>
+	<h3 class="heading">Assignment 1, due at the end of Week 5</h3>
+	<br><br>
+	
+	<!-- Task 2: Use CSS to display information -->	
+	<table class="alternate">
+		<thead>
+			<tr>
+				<th>Activity</th>
+				<th>Date</th>				
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>First day to enrol for re-enrolling (continuing) students</td>
+				<td>21 Nov 2022</td>				
+			</tr>
+			<tr>
+				<td>Orientation</td>
+				<td>18 Jul 2023</td>				
+			</tr>
+			<tr>
+				<td>Lectures Commence (weeks 1-9)</td>
+				<td>24 Jul - 22 Sep 2023</td>				
+			</tr>
+			<tr>
+				<td>Last day to enrol / add subjects yourself</td>
+				<td>04 Aug 2023</td>				
+			</tr>
+			<tr>
+				<td>Last day to enrol / add subjects with Head of Students approval</td>
+				<td>11 Aug 2023</td>				
+			</tr>
+			<tr>
+				<td><p><strong>CENSUS DATE</strong></p>
+					<ul>
+					<li>Fees due</li>
+					<li>Last day to withdraw from subject/s without paying for them</li>
+					<li>HECS / FEE HELP debt reporting date</li>
+					<li>Last day to change HECS / FEE HELP billing option</li>
+					</ul>
+					<p><a href="https://uowedu.service-now.com/kb?id=kb_article_view&amp;sysparm_article=KB0012659">Learn more about Census date &gt;</a></p>
+				</td>
+				<td>31 Aug 2023</td>								
+			</tr>
+			<tr>
+				<td>Student Services and Amenities Fees Due</td>
+				<td>01 Sep 2023</td>				
+			</tr>
+		</tbody>
+	</table><br><br>
+	
+	<!-- Task 3: HTML and CSS Web Attack table -->
+	<table>
+		<thead>
+			<tr>
+				<th style="width:350px">Name</th>
+				<th>Web Attacks</th>				
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Man-in-the-middle<br><br>
+				<img src="man_in_middle.jpg" alt="Man in the middle" width="250"><br><br>
+				Source: <a href="https://beaglesecurity.com/blog/article/man-in-the-middle-attack.html">https://beaglesecurity.com/</a></td>
+				<td>Websites lacking SSL certificates are susceptible to Man-in-the-Middle attacks, where unencrypted data exchanged between 
+					a client and server becomes vulnerable to interception and potential reading by attackers. In the event of a Man-in-the-Middle 
+					attack, personal data and credentials are at risk of compromise. To enhance security, implementing SSL certificates is crucial 
+					for encrypting data during transit, safeguarding against such potential threats. <br><br>
+					Source: <a href="https://beaglesecurity.com/blog/article/man-in-the-middle-attack.html">https://beaglesecurity.com/</a></td>				
+			</tr>
+			<tr>
+				<td>Cross-site scripting (XSS)<br><br>
+				<img src="xss.jpg" alt="Cross-site scripting" width="250"><br><br>
+				Source: <a href="https://www.indusface.com/blog/what-is-xss/">https://www.indusface.com/blog/what-is-xss/</a></td>
+				<td>Browsers or applications can be deceived into executing malicious client-side scripts, typically injected when a user 
+					unknowingly clicks on a malicious link. This can lead to various adverse outcomes, including the installation of malware, 
+					redirection to spoofed sites, or compromise of sensitive data. <br><br>
+					Source: <a href="https://www.tripwire.com/">https://www.tripwire.com/</a></td>				
+			</tr>
+			<tr>
+				<td>SQL injection<br><br>
+				<img src="sqlinjection.jpg" alt="SQL injection" width="250"><br><br>
+				Source: <a href="https://www.simplilearn.com/">https://www.simplilearn.com/</a></td>
+				<td>Numerous websites employ a SQL database backend. A SQL injection attack occurs when a query is maliciously executed through a client's 
+					input method. Vulnerable SQL systems are at risk of having sensitive data compromised, experiencing modifications or deletions in database 
+					content, executing DBMS system commands, and, in some instances, issuing commands to the operating system. <br><br>
+					Source: <a href="https://owasp.org/www-community/attacks/SQL_Injection">https://owasp.org/www-community/attacks/SQL_Injection</a></td>				
+			</tr>
+			<tr>
+				<td>DDoS (Distributed Denial-of-Service)<br><br>
+				<img src="ddos.jpg" alt="DDoS" width="250"><br><br>
+				Source: <a href="https://www.avast.com/">https://www.avast.com</a></td>
+				<td>DDoS attacks inundate target systems with an overwhelming volume of requests, orchestrated from numerous compromised systems simultaneously. 
+					This overwhelms the target web servers, saturating the inbound network and causing a service outage. DDoS attacks may be employed strategically 
+					to divert attention away from other malicious activities by the attackers.<br><br>
+					Source: <a href="https://www.cloudflare.com/en-gb/learning/ddos/what-is-a-ddos-attack/">https://www.cloudflare.com/en-gb/learning/ddos/what-is-a-ddos-attack/</a></td>								
+			</tr>
+			<tr>
+				<td>Directory Traversal<br><br>
+				<img src="directtrav.jpg" alt="Directory Traversal" width="250"><br><br>
+				Source: <a href="https://www.invicti.com/">https://www.invicti.com/</a></td>
+				<td>Websites are organized within directories on a web server, forming a directory tree structure. In the presence of a Directory Traversal vulnerability, 
+					attackers can manipulate URL/input variables/file paths, gaining unauthorized access to directories beyond the website's scope. This could potentially 
+					result in compromised data, modifications or deletions of system files causing outages, and the exposure of intelligence about the environment, paving 
+					the way for further cyber attacks.<br><br>
+					Source: <a href="https://www.imperva.com/learn/application-security/directory-traversal">https://www.imperva.com/learn/application-security/directory-traversal</a></td>												
+			</tr>
+			<tr>
+				<td>Cross-site request forgery<br><br>
+				<img src="csrf.jpg" alt="Cross-site request forgery" width="250"><br><br>
+				Source: <a href="https://hackersonlineclub.com/">https://hackersonlineclub.com/</a></td>
+				<td>Cross-site request forgery is a web vulnerability that tricks a web browser into performing actions on a site using the identity of an end user. Hackers 
+					embed these malicious actions into emails or links, deceiving users into unwittingly executing these requests. Successful attacks depend on specific conditions, 
+					including the target site using cookie session handling, predictable request parameters, and a target action. The consequences of such an attack can be severe, 
+					potentially leading to theft, due to compromised credentials.<br><br>
+					Source: <a href="https://www.okta.com/au/identity-101/csrf-attack/">https://www.okta.com/au/identity-101/csrf-attack/</a></td>												
+			</tr>
+			<tr>
+				<td>File upload attacks<br><br>
+				<img src="fileuploadattack.jpg" alt="File upload attacks" width="250"><br><br>
+				Source: <a href="https://academy.hackthebox.com/">https://academy.hackthebox.com/</a></td>
+				<td>File upload vulnerabilities arise when web servers allow users to upload files without adequate validation of the files name, type, content, size. Insufficient 
+					validation can permit upload of malicious files, and in severe cases, even server-side scripts. The impacts can lead to serious scenarios such as an attacker 
+					gaining full access.<br><br>
+					Source: <a href="https://portswigger.net/web-security/file-upload">https://portswigger.net/web-security/file-upload</a></td>												
+			</tr>
+			<tr>
+				<td>Fuzzing attack<br><br>
+				<img src="fuzzing.jpg" alt="Fuzzing attack" width="250"><br><br>
+				Source: <a href="https://brightsec.com/"></a></td>
+				<td>Fuzzing is a software testing technique that identifies software bugs by injecting malformed data. Attackers can employ the same technique on web applications 
+					to uncover vulnerabilities, utilizing vectors such as URLs, forms, user content, and HTTP requests. The exposure of vulnerabilities through fuzzing can pave the 
+					way for subsequent attacks.<br><br>
+					Source: <a href="https://www.centextech.com/blog/post/what-is-a-fuzzing-attack">https://www.centextech.com/blog/post/what-is-a-fuzzing-attack</a></td>								
+			</tr>
+			<tr>
+				<td>Drive-by Download<br><br>
+				<img src="drive-by.jpg" alt="Drive-by Download" width="250"><br><br>
+				Source: <a href="https://www.wallarm.com/">https://www.wallarm.com/</a></td>
+				<td>Drive-by download refers to the inadvertent downloading of malicious code. A compromised website can be tainted by malware, and no user action is necessary 
+					to trigger the download—simply visiting the site could exploit device vulnerabilities. <br><br>
+					Source: <a href="https://www.kaspersky.com/resource-center/definitions/drive-by-download">https://www.kaspersky.com/resource-center/definitions/drive-by-download</a></td>											
+			</tr>
+			<tr>
+				<td>Password-based attacks<br><br>
+				<img src="password.jpg" alt="" width="250"><br><br>
+				Source: <a href="https://www.lifars.com/">https://www.lifars.com/</a></td>
+				<td>A diverse array of password-based attacks exists, with the most prevalent being brute force (guessing) and credential stuffing (using compromised credentials to 
+					authenticate across multiple systems). Effective prevention strategies involve enforcing the use of complex passwords and regular password changes, complimenting 
+					passwords with Multi-Factor Authentication (MFA), code signing, and adherence to the principle of least privileged access.<br><br>
+					Source: <a href="https://www.tripwire.com/">https://www.tripwire.com/</a></td>												
+			</tr>
+		</tbody>
+	</table><br><br>
+
+	<!-- Task 4: Javascript with buttons -->    
+	<button onClick="cat();">Cat</button>      		<!-- Calls cat function -->
+	<button onClick="dog();">Dog</button>		    <!-- Calls dog function -->
+	<button onClick="frog();">Frog</button>		    <!-- Calls frog function -->
+	<br><br>
+	<input id="animalText"><br><br>
+	<span id="animalClicked"></span><br><br> 
+	<img id="animalImage" width="300"><br><br>
+	<span style='color: black; font-size: 12; font-family: Gill Sans, Gill Sans MT, Calibri, Trebuchet MS, sans-serif;'>Source of animal images: 
+		<a href="https://www.pexels.com/">https://www.pexels.com/</a></span>
+	
+	</body>
+
+</html>
